@@ -16,30 +16,27 @@ const scrollImages = document.querySelector(".scrollable");
     }
 
     if (scrollImages) {
+            
         window.addEventListener("wheel", (e) =>
         {
-          if (count == 1) {
-              if (e.deltaY > 0) {
-                  window.scrollTo({top: window.pageYOffset + window.innerHeight, behavior: 'smooth'});
-              }
-              if (e.deltaY < 0) {
-                  window.scrollTo({top: window.pageYOffset - window.innerHeight, behavior: 'smooth'});           
-              }
-              console.log(e)
-              count++;
-
-              setTimeout(() => {
-                  count = 1;
-              },2500)
-          }
-
+            if (count == 1) {
+                if (e.deltaY > 0) {
+                    let myCount = window.pageYOffset + window.innerHeight;
+                    window.scrollTo({top: myCount, behavior: 'smooth'});
+                }
+                if (e.deltaY < 0) {
+                    window.scrollTo({top: window.pageYOffset - window.innerHeight, behavior: 'smooth'});           
+                }
+                count++;
+                
+                setTimeout(() => {
+                    count = 1;
+                },1500)
+            }
         })
     }
 
-    window.onscroll = (e) =>
-    {
-        console.log(e);
-    }
+
 
 
     const upBtn = document.querySelector("#up");
@@ -71,7 +68,6 @@ const scrollImages = document.querySelector(".scrollable");
     setTimeout((e) => {
         const mouseBorderloader = document.querySelector(".bordered span");
         mouseBorderloader.style.display = "none";
-        console.log(e)
     }, 3000)
 
     let index = 30;
