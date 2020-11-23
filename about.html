@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./aos/aos.min.css">
+    <title>Document</title>
+</head>
+<body class="about">
+    <input type="checkbox" id="menu" style="display: none;">
+    
+    <nav class="px-auto">
+        <a class="logo" href="#">
+            <img src="./images/logo-white.png" alt="">
+        </a>
+        <a href="#" class="manue">Menu</a>
+        <label class="menu" for="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </nav>
+
+
+
+    <input type="checkbox" id="worksDropDown" style="display: none;">
+    <div class="nav-bar" >
+        <ul>
+            <li><a href="#">
+                <label for="worksDropDown">Works</label>
+            </a></li>
+            <li class="drop-down-menu">
+                <div>
+                    <a href="index.html">Fullscreen Slider</a>
+                    <a href="large-crousel.html">Large Carousel</a>
+                    <a href="vertical.html" >Vertical parallax</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="classic.html">Classic Menu</a>
+                </div>
+            </li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="stories.html">Stories</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    
+    <section class="our-best-workd" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="200">
+        <h1>About Us</h1>
+        <p>Creative Studio Design</p>
+    </section>
+    <div class="about-text" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="200">
+        <p>
+            We cover a large range of creative digital projects, platforms, and campaigns to create experiences
+        </p>
+    </div>
+
+    <div class="our-client" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="200">
+        <p>Our clients:</p>
+        <p>Proudly served some of the most famous brands</p>
+    </div>
+
+
+    <div class="our-client-images" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="200">
+        <div>
+            <img src="./images/1.png" alt="">
+        </div>
+        <div>
+            <img src="./images/2.png" alt="">
+        </div>
+        <div>
+            <img src="./images/3.png" alt="">
+        </div>
+        <div>
+            <img src="./images/4.png" alt="">
+        </div>
+        <div>
+            <img src="./images/5.png" alt="">
+        </div>
+        <div>
+            <img src="./images/6.png" alt="">
+        </div>
+        <div>
+            <img src="./images/7.png" alt="">
+        </div>
+        <div>
+            <img src="./images/8.png" alt="">
+        </div>
+    </div>
+
+    <div class="what-people" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="0">
+        <p class="people-saying" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="100">
+            What people are saying about us
+        </p>
+        <p class="people-title" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="100">
+            "The design is beautiful, elegant and minimal. The customer service was amazing, asked for a 404 page and they provided me one free of charge. "
+        </p>
+        <p class="people-name" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="100">
+            John Mac - Themeforest
+        </p>
+    </div>
+
+    <div class="about-text forwad" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="0">
+        <p data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="100">
+            Whatever your needs, we’re looking forward tohearing from you
+        </p>
+    </div>
+
+    <section class="our-best-workd one-col" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="0">
+        <p>Let's Talk</p>
+        <a href="contact.html">
+            Contact
+        </a>
+    </section>
+
+    
+
+
+    <footer class="px-auto i-md one-col" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="0" >
+        <div class="f-child" data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="200">
+            <button id="toTop"><img src="./images/up-chevron.png" alt=""></button>
+            <span>
+                Back Top
+            </span>
+        </div>
+        <div  data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="0">
+            <p>2020 Copyright theme</p>
+        </div>
+        <div class="s-child" data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="200">
+            <div class="follow">
+                <p>Follow</p>
+                <p><img src="./images/share.png" alt=""></p>
+            </div>
+            <ul>
+                <li><a href="#">In</a></li>
+                <li><a href="#">Fb</a></li>
+                <li><a href="#">Be</a></li>
+                <li><a href="#">Tw</a></li>
+                <li><a href="#">Db</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+
+
+    <div class="bordered">
+        <span></span>
+    </div>
+
+
+    <script src="parallax/jquery.min.js"></script>
+    <script src="parallax/parallax.js"></script>
+    <script src="aos/aos.min.js"></script>
+    <script src="script.js"></script>
+    <script >
+        AOS.init({once: true,  mirror: false, easing: "ease-in-out"});
+    </script>
+</body>
+</html>
