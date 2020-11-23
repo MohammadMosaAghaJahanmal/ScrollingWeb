@@ -1247,6 +1247,11 @@ aside
     width: 100%;
 }
 
+.d-inline-block
+{
+    display: inline-block;
+}
+
 @keyframes spinner
 {
     0%
