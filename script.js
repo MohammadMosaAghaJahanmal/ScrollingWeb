@@ -29,11 +29,7 @@ const scrollImages = document.querySelector(".scrollable");
               }
               count++;
 
-
-            //   setTimeout(() => {
-            //           count = 1;
-            //         },2500)
-                }
+            }
           if (e.deltaY == 0) {
             count = 1;
             }
