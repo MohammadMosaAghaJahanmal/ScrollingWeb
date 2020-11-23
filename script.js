@@ -30,13 +30,13 @@ const scrollImages = document.querySelector(".scrollable");
               count++;
 
 
-              setTimeout(() => {
-                      count = 1;
-                    },1000)
+            //   setTimeout(() => {
+            //           count = 1;
+            //         },2500)
                 }
-        //   if (e.deltaY == 1 || e.deltaY == 0 || e.deltaY == -0) {
-            // count = 1;
-        // }
+          if (e.deltaY == 0) {
+            count = 1;
+            }
         })
     }
 

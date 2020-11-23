@@ -7,6 +7,11 @@
     user-select: none;
 }
 
+:root
+{
+    scroll-snap-type: y mandatory;
+}
+
 :root, body
 {
     width: 100%;
@@ -34,6 +39,11 @@ body
 {
     overflow: hidden;
     scroll-behavior: smooth;
+}
+
+main > div
+{
+    scroll-snap-align: start;
 }
 
 ::-webkit-scrollbar
