@@ -1226,6 +1226,27 @@ aside
 {
     max-height: 800px;
 }
+
+.general-post-images
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 100px;
+    padding-top: 100px;
+    min-height: 2500px;
+}
+.general-post-images > div
+{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    
+}
+.general-post-images > div img
+{
+    width: 100%;
+}
+
 @keyframes spinner
 {
     0%
