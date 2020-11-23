@@ -16,26 +16,24 @@ const scrollImages = document.querySelector(".scrollable");
     }
 
     if (scrollImages) {
-            
         window.addEventListener("wheel", (e) =>
         {
-            if (count == 1) {
-                if (e.deltaY > 0) {
-                    let myCount = window.pageYOffset + window.innerHeight;
-                    window.scrollTo({top: myCount, behavior: 'smooth'});
-                }
-                if (e.deltaY < 0) {
-                    window.scrollTo({top: window.pageYOffset - window.innerHeight, behavior: 'smooth'});           
-                }
-                count++;
-                
-                setTimeout(() => {
-                    count = 1;
-                },1500)
-            }
+          if (count == 1) {
+              if (e.deltaY > 0) {
+                  let myCount = window.pageYOffset + window.innerHeight;
+                  window.scrollTo({top: myCount, behavior: 'smooth'});
+              }
+              if (e.deltaY < 0) {
+                  window.scrollTo({top: window.pageYOffset - window.innerHeight, behavior: 'smooth'});           
+              }
+              count++;
+
+              setTimeout(() => {
+                  count = 1;
+              },1700)
+          }
         })
     }
-
 
 
 
