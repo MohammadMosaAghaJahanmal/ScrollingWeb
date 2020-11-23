@@ -18,6 +18,7 @@ const scrollImages = document.querySelector(".scrollable");
     if (scrollImages) {
         window.addEventListener("wheel", (e) =>
         {
+
           if (count == 1) {
               if (e.deltaY > 0) {
                   let myCount = window.pageYOffset + window.innerHeight;
@@ -28,10 +29,14 @@ const scrollImages = document.querySelector(".scrollable");
               }
               count++;
 
+
               setTimeout(() => {
-                  count = 1;
-              },1700)
-          }
+                      count = 1;
+                    },1000)
+                }
+        //   if (e.deltaY == 1 || e.deltaY == 0 || e.deltaY == -0) {
+            // count = 1;
+        // }
         })
     }
 
